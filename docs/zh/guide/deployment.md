@@ -99,12 +99,12 @@ serve -s dist
     script: npm run build
 
     deploy:
-    provider: pages
-    skip_cleanup: true
-    github_token: $GITHUB_TOKEN
-    local_dir: dist
-    on:
-      branch: master
+      provider: pages
+      skip_cleanup: true
+      github_token: $GITHUB_TOKEN
+      local_dir: dist
+      on:
+        branch: master
     ```
   
 6. 将 `.travis.yml` 文件推送到仓库来触发第一次构建。
